@@ -10,19 +10,19 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Install GitVersion
-      uses: gittools/actions/gitversion/setup@v0.9.7
-      with:
-        versionSpec: '5.x'
     - name: Checkout
       uses: actions/checkout@v3
-    - name: Determine Version
-      uses: gittools/actions/gitversion/execute@v0.9.7
-      with:
-        useConfigFile: true
-    - name: Display SemVer
-      run: |
-        echo "SemVer: $GITVERSION_SEMVER"
+    # - name: Install GitVersion
+    #   uses: gittools/actions/gitversion/setup@v0.9.7
+    #   with:
+    #     versionSpec: '5.x'
+    # - name: Determine Version
+    #   uses: gittools/actions/gitversion/execute@v0.9.7
+    #   with:
+    #     useConfigFile: true
+    # - name: Display SemVer
+    #   run: |
+    #     echo "SemVer: $GITVERSION_SEMVER"
     - name: Setup .NET
       uses: actions/setup-dotnet@v2
       with:
