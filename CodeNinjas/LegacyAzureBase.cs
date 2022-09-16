@@ -10,7 +10,7 @@
         ///     Initializes a new instance of the <see cref="LegacyAzureBase{T}"/> class.
         /// </summary>
         /// <param name="productInfoString">The Product Info to pass into the base class.</param>
-        /// <param name="logger">An <see cref="OptionalAttribute"/> <see cref="ILogger"/> passed by the caller for logging in Azure.</param>
+        /// <param name="logger">An <see cref="OptionalAttribute"/> <see cref="ILogger{T}"/> passed by the caller for logging in Azure.</param>
         public LegacyAzureBase(string productInfoString, [Optional] ILogger<T> logger)
             : base(productInfoString)
         {
