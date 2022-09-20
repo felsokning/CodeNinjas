@@ -107,7 +107,7 @@ namespace CodeNinjas
             // Thanks to Peter Saverman for this idea!
             Calendar calendar = CultureInfo.InvariantCulture.Calendar;
             DayOfWeek dayOfWeek = calendar.GetDayOfWeek(dateTime);
-            if (dayOfWeek >= DayOfWeek.Monday && dayOfWeek <= DayOfWeek.Wednesday)
+            if (dayOfWeek <= DayOfWeek.Monday && dayOfWeek <= DayOfWeek.Wednesday)
             {
                 dateTime = dateTime.AddDays(3);
             }

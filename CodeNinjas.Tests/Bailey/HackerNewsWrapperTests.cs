@@ -48,6 +48,9 @@
             result?.Title.Should().Be("Wikipedia Recent Changes Map");
             result?.Type.Should().NotBeNullOrWhiteSpace();
             result?.Type.Should().Be("story");
+            result?.Score.Should().Be(162);
+            result?.Url.Should().NotBeNullOrWhiteSpace();
+            result?.Url.Should().Be("http://rcmap.hatnote.com/#en");
 
             sut = new HackerNewsWrapper()
             {
