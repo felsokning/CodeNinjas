@@ -1,0 +1,7 @@
+mode: Mainline
+branches:
+  pull-request:
+    tag: PR
+ignore:
+  sha: []
+merge-message-formats: {}
